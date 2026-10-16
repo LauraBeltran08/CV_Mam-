@@ -1,0 +1,29 @@
+name: Compilar CV
+
+on:
+  push:
+    paths:
+      - "main.tex"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compilar LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+
+      - name: Guardar el PDF en el repositorio
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add main.pdf
+          git commit -m "Actualizar PDF del CV" || echo "Sin cambios"
+          git push

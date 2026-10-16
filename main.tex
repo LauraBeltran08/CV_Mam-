@@ -1,0 +1,187 @@
+%-------------------------------------------------------------------------
+% Hoja de vida - Gina Paola Piñeros Cojo
+% Mismo formato que el CV de Laura (estilo "Jake's Resume" en español)
+% Para editar: cambia el texto dentro de las llaves { } y vuelve a compilar.
+%-------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{mathptmx}          % letra tipo Times, igual que el CV de Laura
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Márgenes
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Formato de los títulos de sección
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%------------------ Comandos ------------------
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%=========================================================================
+\begin{document}
+
+%------------------ Encabezado ------------------
+\begin{center}
+  {\Huge \scshape Gina Paola Piñeros Cojo} \\ \vspace{3pt}
+  \small
+  \faMapMarker*\ Bogotá, Colombia \quad
+  \faPhone*\ +57 316 536 0550 \quad
+  \faEnvelope\ \href{mailto:ginappc@gmail.com}{ginappc@gmail.com}
+\end{center}
+
+%------------------ Perfil ------------------
+\section{Perfil Profesional}
+\small{
+Profesional en Ciencia de la Información -- Bibliotecología, Documentación y Archivística,
+y Tecnóloga en Gestión Documental, con más de 20 años de experiencia en archivo,
+correspondencia y apoyo administrativo y contractual, gran parte de ella en
+ENTerritorio S.A. (antes FONADE). Conocimientos en
+organización, clasificación, depuración y foliación de documentos, manejo de
+correspondencia interna y externa, y uso del aplicativo ORFEO. Me caracterizo por mi
+compromiso, responsabilidad, buena redacción, excelente servicio al cliente y buenas
+relaciones interpersonales, con disposición para asumir nuevos retos y seguir aprendiendo.
+}
+
+%------------------ Educación ------------------
+\section{Educación}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Fundación Universitaria para el Desarrollo Humano}{Bogotá, Colombia}
+    {Profesional en Ciencia de la Información: Bibliotecología, Documentación y Archivística}{Grado: Sep. 2026}
+  \resumeSubheading
+    {Servicio Nacional de Aprendizaje -- SENA}{Bogotá, Colombia}
+    {Tecnóloga en Gestión Documental}{2012 -- 2014}
+  \resumeSubheading
+    {Instituto Distrital de Comercio Manuela Beltrán}{Bogotá, Colombia}
+    {Bachiller}{1991 -- 1997}
+\resumeSubHeadingListEnd
+
+%------------------ Experiencia ------------------
+\section{Experiencia Laboral}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {ENTerritorio S.A. (antes FONADE)}{Bogotá, Colombia}
+    {Apoyo a la Gestión}{Feb. 2020 -- Actualidad}
+    \resumeItemListStart
+      \resumeItem{Prestar servicios de apoyo a la gestión, con plena autonomía técnica, administrativa y financiera, en las actividades administrativas y operativas de ENTerritorio S.A.}
+      \resumeItem{Apoyar específicamente al Grupo de Evaluación de Proyectos y la ejecución del Contrato de Prestación de Servicios No.~216169.}
+      \resumeItem{Brindar apoyo a las demás áreas y grupos de trabajo de la entidad que lo requieran.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {ENTerritorio S.A. (antes FONADE)}{Bogotá, Colombia}
+    {Apoyo a la Gestión Contractual}{Mar. 2011 -- Ene. 2020}
+    \resumeItemListStart
+      \resumeItem{Apoyar las actividades operativas requeridas para el perfeccionamiento y la legalización de los convenios y contratos suscritos por la entidad.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Listos S.A. -- Empresa de Energía de Cundinamarca}{Bogotá, Colombia}
+    {Auxiliar de Archivo y Correspondencia}{Mar. 2010 -- Oct. 2010}
+    \resumeItemListStart
+      \resumeItem{Digitación en bases de datos, manejo de archivo, recibo y despacho de correspondencia y atención a usuarios.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Microequipos Ltda. -- FONADE}{Bogotá, Colombia}
+    {Archivista Digitadora}{Jun. 2008 -- Feb. 2010}
+    \resumeItemListStart
+      \resumeItem{Digitación en bases de datos, manejo de archivo, recibo y despacho de correspondencia y atención a usuarios.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Jorge Parra y Asociados S.A.S. -- FONADE}{Bogotá, Colombia}
+    {Auxiliar de Archivo}{Mar. 2007 -- Jun. 2008}
+    \resumeItemListStart
+      \resumeItem{Recibo y despacho de correspondencia; organización, depuración y foliación de unidades documentales.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Almarchivos Ltda. -- FONADE}{Bogotá, Colombia}
+    {Auxiliar de Archivo de Proyecto}{Feb. 2006 -- Ene. 2007}
+    \resumeItemListStart
+      \resumeItem{Radicación de correspondencia, manejo de archivos y atención a usuarios.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Sysdatec International -- FONADE}{Bogotá, Colombia}
+    {Auxiliar de Archivo de Proyecto}{Jul. 2005 -- Feb. 2006}
+    \resumeItemListStart
+      \resumeItem{Digitación en bases de datos, manejo de archivo y atención a usuarios.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Databox Colombia -- FONADE}{Bogotá, Colombia}
+    {Auxiliar de Archivo}{May. 2003 -- Dic. 2004}
+    \resumeItemListStart
+      \resumeItem{Digitación en bases de datos, manejo de archivo, recibo y despacho de correspondencia y atención a usuarios.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%------------------ Habilidades ------------------
+\section{Habilidades}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Habilidades Técnicas:} \\
+    Gestión documental $\bullet$ Organización, clasificación y foliación de archivo $\bullet$
+    Correspondencia interna y externa $\bullet$ ORFEO $\bullet$ Digitación en bases de datos $\bullet$
+    Microsoft Excel $\bullet$ Microsoft Office \\ \vspace{4pt}
+    \textbf{Habilidades Blandas:} \\
+    Servicio al cliente $\bullet$ Buena redacción $\bullet$ Compromiso y responsabilidad $\bullet$
+    Relaciones interpersonales $\bullet$ Disposición para aprender
+  }}
+\end{itemize}
+
+%------------------ Cursos ------------------
+\section{Cursos y Certificaciones}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Manejo de Herramientas Microsoft Office 2010: Excel} $|$ \textit{Virtual, 40 horas -- Nov. 2013} \\
+    \textbf{Administración Documental} $|$ \textit{Virtual, 80 horas -- Sep. 2009}
+  }}
+\end{itemize}
+
+\end{document}
